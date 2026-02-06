@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.15)
 
-add_subdirectory(juce)
+# Fetch JUCE from GitHub
+include(../cmake/CPM.cmake)
+CPMAddPackage("gh:/juce-framework/JUCE#8.0.11")
+CPMAddPackage("gh:/free-audio/clap-juce-extensions#main")
+
+# add_subdirectory(juce)
 if(NOT TARGET juce_vst2_sdk)
     juce_set_vst2_sdk_path(${CMAKE_CURRENT_LIST_DIR}/plugin_sdk/vstsdk2.4)
 endif()

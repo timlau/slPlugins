@@ -80,3 +80,7 @@ JuceLibraryCode
 ci/zip
 cmake-build
 .claude
+
+build/
+BUILDROOT/
+build.py

@@ -13,3 +13,7 @@ set_property(GLOBAL PROPERTY XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO)
 
 add_subdirectory(modules)
 add_subdirectory(plugins)
+
+if(LINUX)
+    include(cmake/LinuxInstall.cmake)
+endif()
