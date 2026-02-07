@@ -4,9 +4,6 @@
 [submodule "module/gin"]
 	path = modules/gin
 	url = https://github.com/FigBug/Gin.git
-[submodule "module/juce"]
-	path = modules/juce
-	url = https://github.com/WeAreROLI/JUCE.git
 [submodule "module/bfxr"]
 	path = modules/bfxr
 	url = https://github.com/FigBug/bfxr.git
@@ -25,7 +22,3 @@
 [submodule "modules/infra"]
 	path = modules/infra
 	url = https://github.com/cycfi/infra.git
-[submodule "modules/clap-juce-extensions"]
-	path = modules/clap-juce-extensions
-	url = https://github.com/free-audio/clap-juce-extensions.git
-	branch = main
