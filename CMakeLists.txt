@@ -10,6 +10,7 @@ set (CMAKE_OSX_DEPLOYMENT_TARGET 10.11)
 set (CMAKE_OSX_ARCHITECTURES arm64 x86_64)
 set (CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 set_property(GLOBAL PROPERTY XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO)
+set(AUDIO_FORMATS LV2 VST3 CACHE INTERNAL STRING "Plugin formats to build" )
 
 add_subdirectory(modules)
 add_subdirectory(plugins)

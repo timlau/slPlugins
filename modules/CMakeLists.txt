@@ -6,9 +6,9 @@ CPMAddPackage("gh:/juce-framework/JUCE#8.0.11")
 CPMAddPackage("gh:/free-audio/clap-juce-extensions#main")
 
 # add_subdirectory(juce)
-if(NOT TARGET juce_vst2_sdk)
-    juce_set_vst2_sdk_path(${CMAKE_CURRENT_LIST_DIR}/plugin_sdk/vstsdk2.4)
-endif()
+# if(NOT TARGET juce_vst2_sdk)
+#     juce_set_vst2_sdk_path(${CMAKE_CURRENT_LIST_DIR}/plugin_sdk/vstsdk2.4)
+# endif()
 
 juce_add_module(dRowAudio/module/dRowAudio)
 juce_add_module(gin/modules/gin)

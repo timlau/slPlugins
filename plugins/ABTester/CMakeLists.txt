@@ -29,9 +29,9 @@ project(${PLUGIN_NAME} VERSION ${PLUGIN_VERSION})
 
 # Plugin formats
 if(WIN32)
-    set(FORMATS Standalone VST VST3 LV2)
+    set(FORMATS Standalone VST3 LV2)
 else()
-    set(FORMATS Standalone VST VST3 AU LV2)
+    set(FORMATS ${AUDIO_FORMATS})
 endif()
 
 juce_add_plugin(${PLUGIN_NAME}
