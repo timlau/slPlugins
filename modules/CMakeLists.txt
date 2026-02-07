@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 
 # Fetch JUCE from GitHub
 include(../cmake/CPM.cmake)
-CPMAddPackage("gh:/juce-framework/JUCE#8.0.11")
+CPMAddPackage("gh:/juce-framework/JUCE#8.0.12")
 CPMAddPackage("gh:/free-audio/clap-juce-extensions#main")
 
 # add_subdirectory(juce)
